@@ -232,12 +232,18 @@ ul{ margin: 0; padding: 0; list-style: none; }
 .work-points li{ font-size: 0.98rem; color: var(--ink-soft); padding-left: 20px; position: relative; }
 .work-points li::before{ content: '—'; position: absolute; left: 0; color: var(--accent); }
 .work-points strong{ color: var(--ink); }
+.work-links{ display: flex; flex-wrap: wrap; gap: 12px 28px; }
 .work-link{
   font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 0.85rem;
   border-bottom: 1.5px solid var(--ink); padding-bottom: 2px; display: inline-block;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 .work-link:hover{ color: var(--accent); border-color: var(--accent); }
+.work-link-disabled{
+  color: var(--ink-faint); border-bottom-color: var(--ink-faint); border-bottom-style: dashed;
+  font-style: italic; cursor: default;
+}
+.work-link-disabled:hover{ color: var(--ink-faint); border-bottom-color: var(--ink-faint); }
 
 /* ================= EXPERIENCE ================= */
 .exp-list{ display: flex; flex-direction: column; }
