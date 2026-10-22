@@ -10,6 +10,7 @@ import { initReveal } from './ui/reveal';
 import { initMagnetic } from './ui/magnetic';
 import { initExtras } from './ui/extras';
 import { initStage } from './ui/stage';
+import { initTracks } from './ui/tracks';
 
 initNav();
 initOdometer();
@@ -17,3 +18,4 @@ initReveal();
 initMagnetic();
 initExtras();
 initStage();
+initTracks();
