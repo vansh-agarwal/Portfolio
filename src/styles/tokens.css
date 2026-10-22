@@ -1,0 +1,67 @@
+/* Design tokens. Light theme only, on purpose. */
+:root {
+  /* surfaces */
+  --cream: #fff7e8;
+  --cream-2: #ffefd2;
+  --paper: #fffdf8;
+
+  /* ink (text, outlines, offset shadows) */
+  --ink: #221c3b;
+  --ink-soft: #4f4870;
+
+  /* accents */
+  --tomato: #ff5a3c;
+  --tomato-deep: #c3321a; /* AA as text on cream */
+  --tomato-soft: #ffd9cf;
+  --sun: #ffc83d;
+  --sun-soft: #ffe9a8;
+  --sky: #5bb8ff;
+  --sky-soft: #d4ecff;
+  --mint: #5ed6a6;
+  --mint-soft: #d2f5e5;
+  --lav: #b7bceb;
+  --lav-soft: #ebeafb;
+  --road: #ddd3ee;
+
+  /* type */
+  --font-display: 'Shrikhand', 'Cooper Black', Georgia, serif;
+  --font-body: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: clamp(1.15rem, 1rem + 0.6vw, 1.35rem);
+  --fs-xl: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem);
+  --fs-2xl: clamp(2.2rem, 1.4rem + 3.6vw, 3.9rem);
+  --fs-3xl: clamp(2.6rem, 1.5rem + 5vw, 5.2rem);
+
+  /* spacing scale */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+
+  /* shape */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --stroke: 3px;
+  --border: var(--stroke) solid var(--ink);
+  --shadow-sm: 3px 3px 0 var(--ink);
+  --shadow: 6px 6px 0 var(--ink);
+  --shadow-lg: 10px 10px 0 var(--ink);
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur: 220ms;
+
+  --container: 1180px;
+  --nav-h: 68px;
+}

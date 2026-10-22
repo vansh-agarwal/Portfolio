@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Viewport frame (dev only)</title>
+    <style>
+      html, body { margin: 0; background: #444; }
+      iframe { border: 0; display: block; background: #fff; }
+    </style>
+  </head>
+  <body>
+    <script>
+      // ?w=390&h=844&scroll=0&url=/Portfolio/
+      const q = new URLSearchParams(location.search);
+      const f = document.createElement('iframe');
+      f.width = q.get('w') || 390;
+      f.height = q.get('h') || 844;
+      f.src = (q.get('url') || '/Portfolio/') + (q.get('hash') ? '#' + q.get('hash') : '');
+      const y = Number(q.get('scroll') || 0);
+      if (y) f.addEventListener('load', () => setTimeout(() => f.contentWindow.scrollTo({ top: y, behavior: 'instant' }), 300));
+      document.body.appendChild(f);
+    </script>
+  </body>
+</html>

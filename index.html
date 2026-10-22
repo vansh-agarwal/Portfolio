@@ -1,284 +1,636 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vansh Agarwal | Software Engineer</title>
-<meta name="description" content="Vansh Agarwal, CS student at VIT Chennai. Software engineering, machine learning &amp; full-stack development.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23f4f1ea%22/><text x=%2250%22 y=%2270%22 font-size=%2270%22 text-anchor=%22middle%22 fill=%22%23ff4b1f%22>◆</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vansh Agarwal | ML systems that ship</title>
+    <meta
+      name="description"
+      content="Vansh Agarwal is a B.Tech CSE student at VIT Chennai building and shipping real ML systems: LLM agents, NLP pipelines and tuned models. Open to AI/ML internships."
+    />
+    <meta name="author" content="Vansh Agarwal" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <meta name="theme-color" content="#FFF7E8" />
+    <meta name="color-scheme" content="light only" />
+    <link rel="canonical" href="https://vansh-agarwal.github.io/Portfolio/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-<div class="noise" aria-hidden="true"></div>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vansh-agarwal.github.io/Portfolio/" />
+    <meta property="og:title" content="Vansh Agarwal | ML systems that ship" />
+    <meta
+      property="og:description"
+      content="Third-year CSE student at VIT Chennai who builds ML systems that leave the notebook. Open to AI/ML internships."
+    />
+    <meta property="og:image" content="https://vansh-agarwal.github.io/Portfolio/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A cheerful 3D cartoon of Vansh in a striped lavender kurta, arms crossed, next to his name." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vansh Agarwal | ML systems that ship" />
+    <meta name="twitter:description" content="Third-year CSE student at VIT Chennai building real ML systems. Open to AI/ML internships." />
+    <meta name="twitter:image" content="https://vansh-agarwal.github.io/Portfolio/og.png" />
 
-<button class="side-toggle" id="sideToggle" aria-label="Toggle menu" aria-expanded="false">
-  <span></span><span></span>
-</button>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vansh Agarwal",
+        "url": "https://vansh-agarwal.github.io/Portfolio/",
+        "image": "https://vansh-agarwal.github.io/Portfolio/og.png",
+        "email": "mailto:vanshagarwal078@gmail.com",
+        "jobTitle": "B.Tech Computer Science and Engineering student",
+        "description": "Builds and ships machine learning systems. Open to AI/ML internships.",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "VIT Chennai"
+        },
+        "knowsAbout": ["Machine Learning", "Natural Language Processing", "Transformers", "XGBoost", "Feature Engineering", "Python", "FastAPI"],
+        "sameAs": [
+          "https://github.com/vansh-agarwal",
+          "https://www.linkedin.com/in/vansh-agarwal-3b4847322"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="layout">
+    <!-- Reusable road divider drawn once, used between sections -->
+    <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="road-curve" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M-20 70 C 200 10, 380 120, 600 60 S 1000 10, 1220 70" fill="none" stroke="#DDD3EE" stroke-width="46" stroke-linecap="round" />
+          <path d="M-20 70 C 200 10, 380 120, 600 60 S 1000 10, 1220 70" fill="none" stroke="#FFC83D" stroke-width="5" stroke-dasharray="26 22" stroke-linecap="round" />
+        </symbol>
+      </defs>
+    </svg>
 
-  <!-- ===== SIDEBAR / INDEX ===== -->
-  <aside class="side" id="side">
-    <div class="side-mark">
-      <a href="#home" class="mark">VANSH<br>AGARWAL</a>
-      <span class="mark-sub">Software&nbsp;Engineer</span>
-    </div>
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a class="nav__logo" href="#top" aria-label="VA: Vansh Agarwal, back to the start">
+          <span class="nav__mark" aria-hidden="true">VA</span>
+          <span class="eq eq--tiny" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </a>
 
-    <nav class="side-nav" id="sideNav">
-      <a href="#home" data-num="00" class="side-link">Home</a>
-      <a href="#about" data-num="01" class="side-link">About</a>
-      <a href="#skills" data-num="02" class="side-link">Skills</a>
-      <a href="#work" data-num="03" class="side-link">Work</a>
-      <a href="#experience" data-num="04" class="side-link">Experience</a>
-      <a href="#contact" data-num="05" class="side-link">Contact</a>
-    </nav>
+        <nav class="nav__menu" id="nav-menu" aria-label="Sections">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-    <div class="side-foot">
-      <div class="side-status"><i></i>Open to SWE internships</div>
-      <ul class="side-socials">
-        <li><a href="mailto:vanshagarwal078@gmail.com">Mail</a></li>
-        <li><a href="https://github.com/vansh-agarwal" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/vansh-agarwal-3b4847322" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="tel:+919707029229">Phone</a></li>
-      </ul>
-      <p class="side-loc">Chennai, IN · VIT CSE, Class of '28</p>
-    </div>
-  </aside>
+        <div class="odometer" role="img" aria-label="Trip meter: how far down the page you have scrolled">
+          <span class="odometer__label" aria-hidden="true">TRIP</span>
+          <span class="odometer__digits" id="odometer" aria-hidden="true"></span>
+          <span class="odometer__unit" aria-hidden="true">km</span>
+        </div>
 
-  <!-- ===== MAIN ===== -->
-  <main class="content">
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+      <div class="trip" aria-hidden="true">
+        <div class="trip__road"></div>
+        <svg class="trip__car" id="trip-car" viewBox="0 0 44 22">
+          <path d="M4 15 Q4 9 10 9 L14 4 Q15 3 17 3 L28 3 Q30 3 31 4 L35 9 Q41 9 41 15 L41 17 L4 17 Z" fill="#FF5A3C" stroke="#221C3B" stroke-width="2" stroke-linejoin="round" />
+          <path d="M16 5 L27 5 L31 9 L13 9 Z" fill="#CDE9FF" stroke="#221C3B" stroke-width="1.5" stroke-linejoin="round" />
+          <circle cx="12" cy="17" r="3.6" fill="#221C3B" /><circle cx="33" cy="17" r="3.6" fill="#221C3B" />
+          <circle cx="12" cy="17" r="1.4" fill="#FFF7E8" /><circle cx="33" cy="17" r="1.4" fill="#FFF7E8" />
+        </svg>
+      </div>
+    </header>
 
-    <!-- HOME -->
-    <section id="home" class="hero">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <p class="reveal hero-kicker">Third-year CS undergrad, VIT Chennai</p>
-          <h1 class="reveal hero-title">
-            Software<br>
-            engineer,<br>
-            ML practitioner<span class="accent-dot">.</span>
-          </h1>
-          <p class="reveal hero-desc">
-            Strong foundation in data structures, algorithms, and core software engineering, alongside hands-on
-            experience across the ML stack (classical models, NLP, and transformer-based pipelines) and
-            end-to-end deployment. I own problems from design through production; I've already built and shipped
-            a full-stack system used by real daily users.
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="badge badge--live">
+              <span class="badge__dot" aria-hidden="true"></span>
+              Open to AI/ML internships
+            </p>
+            <h1 class="hero__title" id="hero-title">
+              <span class="hero__hi">Hi, I'm Vansh.</span>
+              <span class="hero__line">I build ML systems that <mark>leave the notebook.</mark></span>
+            </h1>
+            <p class="hero__intro">
+              Third-year CSE student at VIT Chennai. I like models best when real people use them, so I take mine all the way:
+              data, training, honest evaluation and a deploy. Lately that means LLM agents, NLP pipelines and a stock system a
+              real business runs on every day.
+            </p>
+            <div class="hero__ctas">
+              <a class="btn btn--primary magnetic" href="#work">See the work <span aria-hidden="true">&rarr;</span></a>
+              <a class="btn btn--ghost magnetic" href="#contact">Get in touch</a>
+            </div>
+            <ul class="stats" aria-label="Quick stats">
+              <li class="stat stat--sun"><strong>8.54</strong><span>CGPA at VIT Chennai</span></li>
+              <li class="stat stat--mint"><strong>4</strong><span>projects built and shipped</span></li>
+            </ul>
+          </div>
+
+          <div class="hero__stage" id="avatar-stage">
+            <div class="stage__sun" aria-hidden="true"></div>
+            <div class="stage__cloud stage__cloud--a" aria-hidden="true"></div>
+            <div class="stage__cloud stage__cloud--b" aria-hidden="true"></div>
+
+            <!-- 2D fallback avatar. Shown first, then replaced by the 3D scene when WebGL is available and motion is OK. -->
+            <svg class="avatar-svg" id="avatar-svg" viewBox="0 0 400 600" role="img" aria-labelledby="avatar-svg-title">
+              <title id="avatar-svg-title">Illustration of Vansh: short black side-swept hair, black rectangular glasses, a calm little smirk, a light lavender striped kurta with a mandarin collar, white pants, arms crossed.</title>
+              <defs>
+                <pattern id="kurta-stripes" width="8" height="12" patternUnits="userSpaceOnUse">
+                  <rect width="8" height="12" fill="#ABB4E4" />
+                  <rect x="0" width="1.6" height="12" fill="#8C95CF" />
+                  <rect x="4.4" width="0.8" height="12" fill="#C3CAEE" />
+                </pattern>
+                <pattern id="sleeve-stripes" width="8" height="12" patternUnits="userSpaceOnUse">
+                  <rect width="8" height="12" fill="#B7C0EB" />
+                  <rect x="0" width="1.2" height="12" fill="#9AA3D8" />
+                </pattern>
+                <radialGradient id="cheek" cx="0.5" cy="0.5" r="0.5">
+                  <stop offset="0" stop-color="#E7826A" stop-opacity="0.45" />
+                  <stop offset="1" stop-color="#E7826A" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+              <!-- ground disc with a little road -->
+              <ellipse cx="200" cy="566" rx="168" ry="30" fill="#CFF5E4" stroke="#221C3B" stroke-width="3" />
+              <path d="M40 568 Q200 548 360 568" stroke="#DDD3EE" stroke-width="18" fill="none" stroke-linecap="round" />
+              <path d="M52 567 Q200 548 348 567" stroke="#FFC83D" stroke-width="3" fill="none" stroke-dasharray="14 12" />
+              <ellipse cx="200" cy="560" rx="78" ry="11" fill="#221C3B" opacity="0.18" />
+
+              <g class="svg-body">
+                <!-- legs: white pants and shoes -->
+                <path d="M164 470 L168 548 L196 548 L199 478 Z" fill="#FBFBF7" stroke="#221C3B" stroke-width="3" stroke-linejoin="round" />
+                <path d="M236 470 L232 548 L204 548 L201 478 Z" fill="#FBFBF7" stroke="#221C3B" stroke-width="3" stroke-linejoin="round" />
+                <path d="M160 546 Q160 538 172 538 L196 538 Q201 547 197 556 L162 556 Q158 553 160 546 Z" fill="#5A3A2C" stroke="#221C3B" stroke-width="3" stroke-linejoin="round" />
+                <path d="M240 546 Q240 538 228 538 L204 538 Q199 547 203 556 L238 556 Q242 553 240 546 Z" fill="#5A3A2C" stroke="#221C3B" stroke-width="3" stroke-linejoin="round" />
+
+                <!-- neck -->
+                <path d="M186 196 L186 236 L214 236 L214 196 Z" fill="#B97A55" stroke="#221C3B" stroke-width="3" />
+
+                <!-- kurta -->
+                <path d="M136 254 C148 236 172 228 200 228 C228 228 252 236 264 254 L272 330 L286 490 Q200 506 114 490 L128 330 Z" fill="url(#kurta-stripes)" stroke="#221C3B" stroke-width="3.5" stroke-linejoin="round" />
+                <!-- side slit hint -->
+                <path d="M122 440 L130 488 M278 440 L270 488" stroke="#7C85C2" stroke-width="2" />
+                <!-- mandarin collar and placket -->
+                <path d="M180 226 Q200 232 220 226 L222 240 Q200 246 178 240 Z" fill="#C3CAEE" stroke="#221C3B" stroke-width="3" stroke-linejoin="round" />
+                <path d="M196 241 L204 241 L204 300 L196 300 Z" fill="#C3CAEE" stroke="#221C3B" stroke-width="2.5" />
+                <circle cx="200" cy="254" r="3" fill="#4A2F25" />
+                <circle cx="200" cy="270" r="3" fill="#4A2F25" />
+                <circle cx="200" cy="286" r="3" fill="#4A2F25" />
+
+                <!-- arms crossed: upper arms -->
+                <path d="M138 252 C122 274 118 316 124 350 L156 352 C154 318 156 286 162 262 Z" fill="url(#sleeve-stripes)" stroke="#221C3B" stroke-width="3" stroke-linejoin="round" />
+                <!-- back forearm (his left arm reaching across) -->
+                <rect x="132" y="318" width="132" height="32" rx="16" transform="rotate(-7 198 334)" fill="url(#sleeve-stripes)" stroke="#221C3B" stroke-width="3" />
+                <ellipse cx="258" cy="318" rx="13" ry="11" fill="#B97A55" stroke="#221C3B" stroke-width="3" />
+                <path d="M262 252 C278 274 282 316 276 350 L244 352 C246 318 244 286 238 262 Z" fill="url(#sleeve-stripes)" stroke="#221C3B" stroke-width="3" stroke-linejoin="round" />
+                <!-- front forearm -->
+                <rect x="136" y="330" width="134" height="32" rx="16" transform="rotate(6 200 346)" fill="url(#sleeve-stripes)" stroke="#221C3B" stroke-width="3" />
+                <ellipse cx="140" cy="337" rx="13" ry="11" fill="#B97A55" stroke="#221C3B" stroke-width="3" />
+                <path d="M148 330 L152 342" stroke="#8E5A3E" stroke-width="2" stroke-linecap="round" />
+
+                <!-- head -->
+                <g class="svg-head">
+                  <ellipse cx="153" cy="172" rx="10" ry="15" fill="#B97A55" stroke="#221C3B" stroke-width="3" />
+                  <ellipse cx="247" cy="172" rx="10" ry="15" fill="#B97A55" stroke="#221C3B" stroke-width="3" />
+                  <path d="M156 160 C154 112 178 96 200 96 C226 96 248 112 244 160 C244 200 228 218 200 218 C172 218 156 200 156 160 Z" fill="#C4855E" stroke="#221C3B" stroke-width="3.5" />
+                  <ellipse cx="174" cy="194" rx="11" ry="7" fill="url(#cheek)" />
+                  <ellipse cx="226" cy="194" rx="11" ry="7" fill="url(#cheek)" />
+
+                  <!-- hair: thick side-swept fringe -->
+                  <path d="M150 168 C138 118 160 76 204 76 C246 76 266 108 254 160 C250 150 248 140 244 134 C236 140 222 140 210 142 C196 144 182 152 172 156 C164 160 158 166 156 176 Z" fill="#17131F" stroke="#221C3B" stroke-width="3" stroke-linejoin="round" />
+                  <path d="M244 134 C226 150 204 146 180 158 C170 164 162 162 158 152" fill="none" stroke="#17131F" stroke-width="6" stroke-linecap="round" />
+                  <path d="M176 104 C196 94 222 96 236 110" fill="none" stroke="#3B3550" stroke-width="3" stroke-linecap="round" />
+                  <path d="M198 92 C216 92 236 102 244 118" fill="none" stroke="#3B3550" stroke-width="2" stroke-linecap="round" />
+
+                  <!-- glasses -->
+                  <g class="svg-glasses">
+                    <rect x="164" y="158" width="31" height="23" rx="5" fill="#E6F3FF" fill-opacity="0.35" stroke="#16121C" stroke-width="4" />
+                    <rect x="205" y="158" width="31" height="23" rx="5" fill="#E6F3FF" fill-opacity="0.35" stroke="#16121C" stroke-width="4" />
+                    <path d="M195 166 Q200 162 205 166" stroke="#16121C" stroke-width="3.5" fill="none" />
+                    <path d="M164 164 L156 162 M236 164 L244 162" stroke="#16121C" stroke-width="3.5" />
+                  </g>
+                  <!-- eyes -->
+                  <g class="svg-eyes">
+                    <ellipse cx="180" cy="170" rx="3.6" ry="4.2" fill="#17131F" />
+                    <ellipse cx="220" cy="170" rx="3.6" ry="4.2" fill="#17131F" />
+                  </g>
+                  <!-- brows peeking under the fringe -->
+                  <path d="M172 154 Q180 151 188 153" stroke="#17131F" stroke-width="3" stroke-linecap="round" fill="none" />
+                  <path d="M212 152 Q220 149 228 152" stroke="#17131F" stroke-width="3" stroke-linecap="round" fill="none" />
+                  <!-- nose and smirk -->
+                  <path d="M200 176 Q196 188 201 190" stroke="#8E5A3E" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                  <path d="M188 200 Q200 205 214 197" stroke="#5B2E24" stroke-width="3" fill="none" stroke-linecap="round" />
+                  <path d="M212 196 L216 194" stroke="#5B2E24" stroke-width="2.5" stroke-linecap="round" />
+                </g>
+              </g>
+            </svg>
+
+            <div class="stage__bubble" id="stage-bubble" aria-hidden="true">Hey! Glad you pulled over.</div>
+            <div class="stage__eq eq" id="stage-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <button class="groove-btn" id="groove-btn" type="button">
+              <span aria-hidden="true">&#9835;</span> Drop a beat
+            </button>
+            <p class="sr-only" id="groove-status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="road-divider" aria-hidden="true"><svg><use href="#road-curve" /></svg></div>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="sign sign--mint"><span class="sign__exit">Exit 01</span><span class="sign__name">Pit stop</span></p>
+            <h2 class="section__title" id="about-title">Who's driving?</h2>
+          </header>
+
+          <div class="about__grid">
+            <div class="about__text reveal">
+              <p>
+                I'm Vansh, a third-year Computer Science student at VIT Chennai. I got pulled into machine learning because I
+                liked the idea of software that learns from data instead of rules I write by hand, and I stayed because shipping
+                it is even more fun.
+              </p>
+              <p>
+                I care about the whole road, not just the fast lane: messy data, careful features, honest evaluation and getting
+                the thing deployed where people can actually use it. Accuracy on a notebook cell is a pit stop, not the
+                destination.
+              </p>
+              <p>
+                Off the keyboard you'll find me on a long drive with the windows down and the volume up. Good roads and good
+                music: that's the whole recipe.
+              </p>
+            </div>
+
+            <div class="about__cards">
+              <article class="card card--edu reveal" aria-labelledby="edu-title">
+                <p class="card__kicker">Education</p>
+                <h3 class="card__title" id="edu-title">VIT Chennai</h3>
+                <p class="card__sub">B.Tech, Computer Science and Engineering</p>
+                <dl class="edu__facts">
+                  <div><dt>When</dt><dd>Aug 2024 to May 2028</dd></div>
+                  <div><dt>CGPA</dt><dd>8.54</dd></div>
+                </dl>
+                <p class="card__kicker card__kicker--sm">Relevant coursework</p>
+                <ul class="chips" aria-label="Relevant coursework">
+                  <li>Data Structures and Algorithms</li>
+                  <li>Machine Learning</li>
+                  <li>Python</li>
+                  <li>Probability and Statistics</li>
+                  <li>Linear Algebra</li>
+                  <li>DBMS</li>
+                  <li>OOP</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="road-divider road-divider--flip" aria-hidden="true"><svg><use href="#road-curve" /></svg></div>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section section--tint" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="sign sign--sky"><span class="sign__exit">Exit 02</span><span class="sign__name">Under the hood</span></p>
+            <h2 class="section__title" id="skills-title">Greatest hits</h2>
+            <p class="section__lede">The toolkit, sorted into mixtapes. Side A is where I live; the rest is on heavy rotation.</p>
+          </header>
+
+          <div class="tapes">
+            <article class="tape tape--tomato reveal" aria-labelledby="tape-lang">
+              <div class="tape__top" aria-hidden="true"><span class="tape__reel"></span><span class="tape__window"></span><span class="tape__reel"></span></div>
+              <p class="tape__side" aria-hidden="true">Side A</p>
+              <h3 class="tape__title" id="tape-lang">Languages</h3>
+              <ul class="chips chips--lg">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>C++</li>
+              </ul>
+            </article>
+
+            <article class="tape tape--sun reveal" aria-labelledby="tape-ml">
+              <div class="tape__top" aria-hidden="true"><span class="tape__reel"></span><span class="tape__window"></span><span class="tape__reel"></span></div>
+              <p class="tape__side" aria-hidden="true">Side B</p>
+              <h3 class="tape__title" id="tape-ml">ML and NLP</h3>
+              <ul class="chips">
+                <li>Scikit-learn</li>
+                <li>XGBoost</li>
+                <li>Optuna</li>
+                <li>SHAP</li>
+                <li>HuggingFace Transformers</li>
+                <li>spaCy</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+              </ul>
+            </article>
+
+            <article class="tape tape--mint reveal" aria-labelledby="tape-tools">
+              <div class="tape__top" aria-hidden="true"><span class="tape__reel"></span><span class="tape__window"></span><span class="tape__reel"></span></div>
+              <p class="tape__side" aria-hidden="true">Bonus track</p>
+              <h3 class="tape__title" id="tape-tools">Tools and platforms</h3>
+              <ul class="chips">
+                <li>Jupyter</li>
+                <li>Git and GitHub</li>
+                <li>Google Cloud Platform</li>
+                <li>FastAPI</li>
+                <li>VS Code</li>
+              </ul>
+            </article>
+
+            <article class="tape tape--sky reveal" aria-labelledby="tape-concepts">
+              <div class="tape__top" aria-hidden="true"><span class="tape__reel"></span><span class="tape__window"></span><span class="tape__reel"></span></div>
+              <p class="tape__side" aria-hidden="true">Liner notes</p>
+              <h3 class="tape__title" id="tape-concepts">Concepts</h3>
+              <ul class="chips">
+                <li>Machine Learning</li>
+                <li>NLP</li>
+                <li>Applied deep learning (Transformers)</li>
+                <li>Feature engineering</li>
+                <li>Hyperparameter tuning</li>
+                <li>Model evaluation</li>
+                <li>Statistics</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="road-divider" aria-hidden="true"><svg><use href="#road-curve" /></svg></div>
+
+      <!-- ============ WORK ============ -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="sign sign--sun"><span class="sign__exit">Exit 03</span><span class="sign__name">Scenic route</span></p>
+            <h2 class="section__title" id="work-title">The track list</h2>
+            <p class="section__lede">Four projects, all built end to end. Open any card for the liner notes.</p>
+          </header>
+
+          <ol class="projects">
+            <!-- a -->
+            <li class="project project--tomato reveal">
+              <article aria-labelledby="p1-title">
+                <div class="project__head">
+                  <span class="project__track" aria-hidden="true">Track 01</span>
+                  <p class="project__meta">NLP course project &middot; Team of 2</p>
+                </div>
+                <h3 class="project__title" id="p1-title">Autonomous Investment Research Agent</h3>
+                <p class="project__pitch">
+                  An LLM agent that researches an Indian stock end to end, so you don't have to keep twelve tabs open.
+                </p>
+                <ul class="badges" aria-label="Highlights">
+                  <li class="badge-metric">NSE + BSE</li>
+                  <li class="badge-metric">RAG over NSE, BSE and RBI sources</li>
+                  <li class="badge-metric">Follow-up chat</li>
+                </ul>
+                <details class="project__more">
+                  <summary>Liner notes</summary>
+                  <ul>
+                    <li>Give it a ticker, an exchange and a research scope; it pulls fresh news from GNews and Marketaux.</li>
+                    <li>Retrieval-augmented generation over NSE, BSE and RBI sources keeps the answers grounded.</li>
+                    <li>An open LLM served through Groq writes the research and handles follow-up questions.</li>
+                    <li>Web UI with a ticker, exchange and scope form, follow-up chat, document upload into the knowledge base, and a sources list so you can check the receipts.</li>
+                  </ul>
+                </details>
+                <ul class="chips chips--tech" aria-label="Tech used">
+                  <li>LLM agent</li><li>RAG</li><li>Groq</li><li>GNews API</li><li>Marketaux API</li><li>Web UI</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link-btn" href="https://github.com/vansh-agarwal/Stock_Market_Agent" target="_blank" rel="noopener">
+                    GitHub repo <span class="sr-only">for the Investment Research Agent (opens in a new tab)</span><span aria-hidden="true">&nearr;</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- b -->
+            <li class="project project--sky reveal">
+              <article aria-labelledby="p2-title">
+                <div class="project__head">
+                  <span class="project__track" aria-hidden="true">Track 02</span>
+                  <p class="project__meta">2026 &middot; Team project &middot; Live</p>
+                </div>
+                <h3 class="project__title" id="p2-title">Reddit r/technology Sentiment and Virality Analyzer</h3>
+                <p class="project__pitch">What makes a tech post blow up? Turns out being grumpy helps a lot.</p>
+                <ul class="badges" aria-label="Key metrics">
+                  <li class="badge-metric"><strong>0.7833</strong> test ROC AUC</li>
+                  <li class="badge-metric"><strong>2,091</strong> posts</li>
+                  <li class="badge-metric"><strong>27.4% vs 16.8%</strong> viral, negative vs positive</li>
+                </ul>
+                <details class="project__more">
+                  <summary>Liner notes</summary>
+                  <ul>
+                    <li>Worked with a 2,091-post dataset from r/technology.</li>
+                    <li>Stacked RoBERTa sentiment, TF-IDF, a 15-topic LDA model and spaCy NER into one feature set.</li>
+                    <li>Kept every feature leakage-free, so the score reflects real predictive signal.</li>
+                    <li>Logistic Regression reached 0.7833 ROC AUC on the held-out test set.</li>
+                    <li>Headline finding: negative posts go viral at nearly 2x the rate of positive ones (27.4% vs 16.8%).</li>
+                    <li>Shipped as a live Streamlit dashboard anyone can poke at.</li>
+                  </ul>
+                </details>
+                <ul class="chips chips--tech" aria-label="Tech used">
+                  <li>Python</li><li>HuggingFace Transformers</li><li>spaCy</li><li>Scikit-learn</li><li>Streamlit</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link-btn link-btn--solid" href="https://tech-public-opinion-tracker-noice.streamlit.app/" target="_blank" rel="noopener">
+                    Live demo <span class="sr-only">of the Reddit analyzer (opens in a new tab)</span><span aria-hidden="true">&nearr;</span>
+                  </a>
+                  <a class="link-btn" href="https://github.com/nishkmistry/Tech-Public-Opinion-Tracker" target="_blank" rel="noopener">
+                    GitHub repo <span class="sr-only">for the Reddit analyzer (opens in a new tab)</span><span aria-hidden="true">&nearr;</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- c -->
+            <li class="project project--sun reveal">
+              <article aria-labelledby="p3-title">
+                <div class="project__head">
+                  <span class="project__track" aria-hidden="true">Track 03</span>
+                  <p class="project__meta">2026</p>
+                </div>
+                <h3 class="project__title" id="p3-title">NYC Taxi Trip Analysis and ML Model</h3>
+                <p class="project__pitch">A million taxi rides in, predictions land within 66 cents on average.</p>
+                <ul class="badges" aria-label="Key metrics">
+                  <li class="badge-metric"><strong>R&sup2; 0.9851</strong></li>
+                  <li class="badge-metric"><strong>MAE $0.66</strong></li>
+                  <li class="badge-metric"><strong>RMSE $1.46</strong></li>
+                  <li class="badge-metric"><strong>1M+</strong> records</li>
+                </ul>
+                <details class="project__more">
+                  <summary>Liner notes</summary>
+                  <ul>
+                    <li>Worked through 1M+ records from the 2016 NYC Yellow Taxi dataset.</li>
+                    <li>Cleaning, exploratory data analysis and feature engineering before any model got near it.</li>
+                    <li>XGBoost, with hyperparameters tuned using Optuna.</li>
+                    <li>Final scores: R&sup2; 0.9851, MAE $0.66, RMSE $1.46.</li>
+                  </ul>
+                </details>
+                <ul class="chips chips--tech" aria-label="Tech used">
+                  <li>Python</li><li>XGBoost</li><li>Optuna</li><li>EDA</li><li>Feature engineering</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link-btn" href="https://github.com/vansh-agarwal/NYC-TAXI-DATA-EDA-MLModel" target="_blank" rel="noopener">
+                    GitHub repo <span class="sr-only">for the NYC taxi model (opens in a new tab)</span><span aria-hidden="true">&nearr;</span>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+            <!-- d -->
+            <li class="project project--mint reveal">
+              <article aria-labelledby="p4-title">
+                <div class="project__head">
+                  <span class="project__track" aria-hidden="true">Track 04</span>
+                  <p class="project__meta">2026 &middot; Deployed &middot; In daily use</p>
+                </div>
+                <h3 class="project__title" id="p4-title">Stock Management System for Unitech Solutions</h3>
+                <p class="project__pitch">
+                  Built for my family's printing-materials business. Real users, real stock, every single day.
+                </p>
+                <ul class="badges" aria-label="Key metrics">
+                  <li class="badge-metric"><strong>~70 to 80%</strong> less reconciliation time (est.)</li>
+                  <li class="badge-metric"><strong>2,429</strong> rolls tracked</li>
+                  <li class="badge-metric"><strong>~85</strong> dispatch notes a month</li>
+                </ul>
+                <details class="project__more">
+                  <summary>Liner notes</summary>
+                  <ul>
+                    <li>Tracks 192 SKU groups and 2,429 rolls, roughly 158,700 sqm of material.</li>
+                    <li>Role-based access for 5 to 10 daily users, QR scanning and automatic sqm calculations.</li>
+                    <li>Generates watermarked dispatch notes with ReportLab, about 85 a month.</li>
+                    <li>Runs on Google Cloud Run (asia-south1) with automated Cloud Storage backups.</li>
+                    <li>Cut manual stock reconciliation time by an estimated 70 to 80%.</li>
+                  </ul>
+                </details>
+                <ul class="chips chips--tech" aria-label="Tech used">
+                  <li>FastAPI</li><li>Jinja2</li><li>TailwindCSS</li><li>SQLite</li><li>Google Cloud Run</li><li>Cloud Storage</li><li>ReportLab</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link-btn" href="#contact">Private repo. Ask me for a walkthrough</a>
+                </div>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <div class="road-divider road-divider--flip" aria-hidden="true"><svg><use href="#road-curve" /></svg></div>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section section--tint-sun" id="experience" aria-labelledby="exp-title">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="sign sign--tomato"><span class="sign__exit">Exit 04</span><span class="sign__name">Milestones</span></p>
+            <h2 class="section__title" id="exp-title">The tour so far</h2>
+          </header>
+
+          <ol class="timeline">
+            <li class="milestone reveal">
+              <div class="milestone__post" aria-hidden="true"><span>KM</span><b>01</b></div>
+              <div class="milestone__card">
+                <p class="milestone__when">2025 to Mar 2026</p>
+                <h3 class="milestone__title">Python for Data Science and Machine Learning Bootcamp</h3>
+                <p class="milestone__org">Udemy, taught by Jose Portilla</p>
+                <p>
+                  Python, Pandas, NumPy, Scikit-learn, Matplotlib and Seaborn, plus the core ML algorithms: regression,
+                  classification, clustering and NLP. 20+ hands-on projects along the way.
+                </p>
+              </div>
+            </li>
+            <li class="milestone reveal">
+              <div class="milestone__post" aria-hidden="true"><span>KM</span><b>02</b></div>
+              <div class="milestone__card">
+                <p class="milestone__when">2026</p>
+                <h3 class="milestone__title">Advanced Data Analytics Virtual Job Simulation</h3>
+                <p class="milestone__org">Forage, with Quantium</p>
+                <p>Data cleaning, customer segmentation and statistical testing with Python and Pandas.</p>
+              </div>
+            </li>
+            <li class="milestone reveal">
+              <div class="milestone__post" aria-hidden="true"><span>KM</span><b>03</b></div>
+              <div class="milestone__card">
+                <p class="milestone__when">2025 to Present</p>
+                <h3 class="milestone__title">Event Management Team Member, Organising Committee</h3>
+                <p class="milestone__org">CodeChef VIT Chennai Chapter</p>
+                <p>Helped run Cook Off and TetherX: logistics, scheduling and participant communication.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <div class="road-divider" aria-hidden="true"><svg><use href="#road-curve" /></svg></div>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact__inner">
+          <div class="contact__sign reveal" aria-hidden="true">
+            <span>End of</span><span>the road</span>
+          </div>
+          <h2 class="section__title contact__title reveal" id="contact-title">End of the road. Say hi!</h2>
+          <p class="section__lede reveal">
+            Hiring for an AI/ML internship, got a project idea, or want to swap road-trip playlists? My inbox is open.
           </p>
-
-          <div class="reveal hero-stats">
-            <div class="stat"><span class="stat-num">8.54</span><span class="stat-label">CGPA&nbsp;/&nbsp;10</span></div>
-            <div class="stat"><span class="stat-num">03</span><span class="stat-label">Projects built</span></div>
-            <div class="stat"><span class="stat-num">2028</span><span class="stat-label">Expected grad</span></div>
+          <div class="contact__mail reveal">
+            <a class="btn btn--primary btn--xl magnetic" href="mailto:vanshagarwal078@gmail.com">vanshagarwal078@gmail.com</a>
+            <button class="btn btn--ghost" type="button" id="copy-email" data-email="vanshagarwal078@gmail.com">Copy email</button>
+            <p class="sr-only" id="copy-status" aria-live="polite"></p>
           </div>
-
-          <div class="reveal hero-actions">
-            <a href="#work" class="btn btn-primary">See the work</a>
-            <a href="#contact" class="btn btn-outline">Get in touch</a>
-          </div>
-        </div>
-
-        <figure class="reveal hero-photo">
-          <img src="img/vansh.jpeg" alt="Portrait of Vansh Agarwal" width="480" height="600" loading="eager">
-          <figcaption class="hero-photo-tag">Vansh, Chennai</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="sec">
-      <h2 class="reveal sec-head"><span class="sec-num">01</span>About</h2>
-
-      <div class="about-grid">
-        <p class="reveal about-lede">
-          I'm a Computer Science undergraduate at <strong>Vellore Institute of Technology, Chennai</strong>,
-          drawn to the mix of core software engineering and applied machine learning. I like the full arc of
-          building something (data, design, deployment), and I'm currently seeking a
-          <strong>Software Engineering internship</strong> to apply strong CS fundamentals to scalable,
-          real-world systems.
-        </p>
-
-        <div class="reveal about-edu">
-          <span class="about-edu-label">Education</span>
-          <h3>Vellore Institute of Technology, Chennai</h3>
-          <p class="about-edu-deg">B.Tech, Computer Science &amp; Engineering</p>
-          <div class="about-edu-meta">
-            <span>Aug 2024 – May 2028</span>
-            <span>CGPA 8.54 / 10.0</span>
-          </div>
-          <p class="about-edu-course">
-            Data Structures &amp; Algorithms (A) · Machine Learning · Python · Probability &amp; Statistics ·
-            Linear Algebra · Database Management Systems · Object-Oriented Programming
+          <ul class="contact__links reveal">
+            <li>
+              <a href="https://github.com/vansh-agarwal" target="_blank" rel="noopener">
+                <span class="contact__label">GitHub</span> github.com/vansh-agarwal<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/vansh-agarwal-3b4847322" target="_blank" rel="noopener">
+                <span class="contact__label">LinkedIn</span> linkedin.com/in/vansh-agarwal-3b4847322<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+919707029229"><span class="contact__label">Phone</span> +91 97070 29229</a>
+            </li>
+          </ul>
+          <p class="contact__trip reveal">
+            Trip meter reads <b>2028 km</b>. Fun coincidence: that's also the year I graduate.
           </p>
         </div>
-      </div>
-
-      <div class="reveal interests">
-        <span>Machine Learning</span><span>Deep Learning</span><span>Natural Language Processing</span>
-        <span>Artificial Intelligence</span><span>Data Science &amp; Analytics</span><span>Data Visualisation</span>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="sec sec-shade">
-      <h2 class="reveal sec-head"><span class="sec-num">02</span>Skills</h2>
-
-      <div class="skill-table">
-        <div class="reveal skill-row">
-          <span class="skill-cat">Languages</span>
-          <p class="skill-tags">Python · SQL · C++</p>
-        </div>
-        <div class="reveal skill-row">
-          <span class="skill-cat">ML&nbsp;/&nbsp;NLP</span>
-          <p class="skill-tags">Scikit-learn · XGBoost · Optuna · SHAP · HuggingFace Transformers · spaCy · Pandas · NumPy · Matplotlib · Seaborn</p>
-        </div>
-        <div class="reveal skill-row">
-          <span class="skill-cat">Tools&nbsp;/&nbsp;Platforms</span>
-          <p class="skill-tags">Jupyter Notebook · Git &amp; GitHub · Google Cloud Platform · FastAPI · VS Code</p>
-        </div>
-        <div class="reveal skill-row">
-          <span class="skill-cat">Concepts</span>
-          <p class="skill-tags">Machine Learning · NLP · Applied Deep Learning (Transformers) · Feature Engineering · Hyperparameter Tuning · Model Evaluation · Statistics</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section id="work" class="sec">
-      <h2 class="reveal sec-head"><span class="sec-num">03</span>Work</h2>
-
-      <div class="work-index">
-
-        <article class="reveal work-row">
-          <div class="work-row-head">
-            <span class="work-num">01</span>
-            <h3 class="work-title">Reddit r/technology Sentiment &amp; Virality Analyzer</h3>
-            <span class="work-year">2026</span>
-          </div>
-          <div class="work-row-body">
-            <div class="work-meta">
-              <span class="work-type">Team project</span>
-              <span class="work-stack">Python / HuggingFace Transformers / spaCy / Scikit-learn / Streamlit</span>
-            </div>
-            <ul class="work-points">
-              <li>Led sentiment analysis &amp; NLP feature engineering on a 2,091-post r/technology dataset: RoBERTa sentiment inference, TF-IDF vectorization, 15-topic LDA modeling, spaCy NER.</li>
-              <li>Owned virality prediction: engineered leakage-free features and benchmarked Logistic Regression, Random Forest, and Gradient Boosting. Logistic Regression reached <strong>0.7833 test ROC AUC</strong>.</li>
-              <li>Found negative posts go viral at nearly 2× the rate of positive posts (27.4% vs 16.8%); co-built and deployed a live interactive Streamlit dashboard.</li>
-            </ul>
-            <div class="work-links">
-              <a class="work-link" href="https://github.com/nishkmistry/Tech-Public-Opinion-Tracker" target="_blank" rel="noopener">View repository →</a>
-              <a class="work-link" href="https://tech-public-opinion-tracker-noice.streamlit.app/" target="_blank" rel="noopener">Live demo →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="reveal work-row">
-          <div class="work-row-head">
-            <span class="work-num">02</span>
-            <h3 class="work-title">NYC Taxi Trip Analysis &amp; ML Model</h3>
-            <span class="work-year">2026</span>
-          </div>
-          <div class="work-row-body">
-            <div class="work-meta">
-              <span class="work-type">ML / Regression</span>
-              <span class="work-stack">Python / Pandas / NumPy / Scikit-learn / XGBoost / Optuna / Seaborn</span>
-            </div>
-            <ul class="work-points">
-              <li>Analysed the NYC Yellow Taxi Trip Dataset (2016) across 1M+ records: fare distribution, trip duration, and pickup/drop-off demand zones, through thorough cleaning and EDA.</li>
-              <li>Engineered domain-relevant features and trained an XGBoost regression model with Optuna hyperparameter tuning, achieving <strong>R² = 0.9851</strong>, MAE = $0.66, RMSE = $1.46.</li>
-              <li>Documented the full methodology on GitHub for reproducibility.</li>
-            </ul>
-            <a class="work-link" href="https://github.com/vansh-agarwal/NYC-TAXI-DATA-EDA-MLModel" target="_blank" rel="noopener">View repository →</a>
-          </div>
-        </article>
-
-        <article class="reveal work-row">
-          <div class="work-row-head">
-            <span class="work-num">03</span>
-            <h3 class="work-title">Stock Management System for Unitech Solutions</h3>
-            <span class="work-year">2026</span>
-          </div>
-          <div class="work-row-body">
-            <div class="work-meta">
-              <span class="work-type">Full-stack / Deployed</span>
-              <span class="work-stack">Python / FastAPI / Jinja2 / TailwindCSS / SQLite / Google Cloud Run</span>
-            </div>
-            <ul class="work-points">
-              <li>Designed and deployed a full-stack inventory management web app for a family printing-materials business: 192 SKU groups, 2,429 rolls (~158,700 sqm / 1.7M+ sqft), with role-based access for 5-10 daily users.</li>
-              <li>Built with FastAPI and Jinja2/TailwindCSS on SQLite with automated Google Cloud Storage backups; added QR code scanning, sq. meter calculations, and ReportLab-based watermarked dispatch notes (~85/month).</li>
-              <li>Deployed on Google Cloud Run (asia-south1), cutting manual stock reconciliation time by an estimated <strong>70–80%</strong> versus the prior paper-based process.</li>
-            </ul>
-            <span class="work-link work-link-disabled">Private repository, built for a client</span>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="sec sec-shade">
-      <h2 class="reveal sec-head"><span class="sec-num">04</span>Experience</h2>
-
-      <div class="exp-list">
-        <div class="reveal exp-row">
-          <span class="exp-date">2025 – Mar 2026</span>
-          <div class="exp-body">
-            <h3>Python for Data Science and Machine Learning Bootcamp</h3>
-            <p class="exp-org">Udemy (Jose Portilla)</p>
-            <p>Completed a comprehensive course covering Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn,
-              and core ML algorithms (regression, classification, clustering, and NLP) across 20+ hands-on projects.</p>
-          </div>
-        </div>
-
-        <div class="reveal exp-row">
-          <span class="exp-date">2026</span>
-          <div class="exp-body">
-            <h3>Advanced Data Analytics Virtual Job Simulation</h3>
-            <p class="exp-org">Forage (Quantium)</p>
-            <p>Modelled real-world analyst workflows including data cleaning, customer segmentation, and
-              statistical testing using Python and Pandas to derive actionable business insights from
-              transaction datasets.</p>
-          </div>
-        </div>
-
-        <div class="reveal exp-row">
-          <span class="exp-date">2025 – Present</span>
-          <div class="exp-body">
-            <h3>Event Management Team Member, Organising Committee</h3>
-            <p class="exp-org">CodeChef VIT Chennai Chapter</p>
-            <p>Served on the Organising Committee for two competitive programming events, Cook Off and TetherX,
-              handling logistics, scheduling, and participant communication; contributed to expanding student
-              participation through structured event planning and cross-team collaboration.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="sec contact">
-      <h2 class="reveal sec-head"><span class="sec-num">05</span>Contact</h2>
-      <p class="reveal contact-lede">
-        Looking for a Software Engineering internship. If you have a role, a project, or just want to talk
-        shop, reach out.
-      </p>
-      <a class="reveal contact-email" href="mailto:vanshagarwal078@gmail.com">vanshagarwal078@gmail.com</a>
-
-      <ul class="reveal contact-list">
-        <li><span>Phone</span><a href="tel:+919707029229">+91 97070 29229</a></li>
-        <li><span>LinkedIn</span><a href="https://linkedin.com/in/vansh-agarwal-3b4847322" target="_blank" rel="noopener">/in/vansh-agarwal-3b4847322</a></li>
-        <li><span>GitHub</span><a href="https://github.com/vansh-agarwal" target="_blank" rel="noopener">/vansh-agarwal</a></li>
-      </ul>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Vansh Agarwal</p>
-      <a href="#home">Back to top ↑</a>
+      <div class="container footer__inner">
+        <p>&copy; <span id="year">2026</span> Vansh Agarwal. Built with Vite, Three.js and a long-drive playlist.</p>
+        <button class="cassette-btn" type="button" id="cassette" aria-describedby="cassette-hint">
+          <svg viewBox="0 0 64 40" aria-hidden="true" focusable="false">
+            <rect x="2" y="2" width="60" height="36" rx="5" fill="#FF8C74" stroke="#221C3B" stroke-width="3" />
+            <rect x="10" y="9" width="44" height="14" rx="7" fill="#FFF7E8" stroke="#221C3B" stroke-width="2.5" />
+            <circle class="cassette-reel" cx="20" cy="16" r="4" fill="#221C3B" />
+            <circle class="cassette-reel" cx="44" cy="16" r="4" fill="#221C3B" />
+            <path d="M16 38 L20 29 L44 29 L48 38" fill="#5BB8FF" stroke="#221C3B" stroke-width="2.5" stroke-linejoin="round" />
+          </svg>
+          <span class="sr-only">Play a tiny road-trip jingle</span>
+        </button>
+        <span class="sr-only" id="cassette-hint">Plays a short sound.</span>
+        <a class="footer__top" href="#top">Back to the start <span aria-hidden="true">&uarr;</span></a>
+      </div>
     </footer>
 
-  </main>
-</div>
-
-<script src="js/main.js"></script>
-</body>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
